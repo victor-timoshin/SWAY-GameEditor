@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Assets\Shaders\basic.fs" />
+    <None Include="..\..\..\Assets\Shaders\basic.vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Code\Src\Application.cpp" />
+    <ClCompile Include="..\..\..\Code\Src\SceneGraphPanel.cpp" />
+    <ClCompile Include="..\..\..\Code\Src\SceneGraphTreeCtrl.cpp" />
+    <ClCompile Include="..\..\..\Code\Src\SceneGraphTreeItemData.cpp" />
+    <ClCompile Include="..\..\..\Code\Src\ConsolePanel.cpp" />
+    <ClCompile Include="..\..\..\Code\Src\Inspector\InspectorPropertyController.cpp" />
+    <ClCompile Include="..\..\..\Code\Src\Inspector\InspectorPanel.cpp" />
+    <ClCompile Include="..\..\..\Code\Src\Inspector\InspectorPropertyGridPage.cpp" />
+    <ClCompile Include="..\..\..\Code\Src\MainFrame.cpp" />
+    <ClCompile Include="..\..\..\Code\Src\MainMenu.cpp" />
+    <ClCompile Include="..\..\..\Code\Src\AssetBrowserThumbnail.cpp" />
+    <ClCompile Include="..\..\..\Code\Src\AssetBrowserCtrl.cpp" />
+    <ClCompile Include="..\..\..\Code\Src\TransformPanel.cpp" />
+    <ClCompile Include="..\..\..\Code\Src\View\ViewContext.cpp" />
+    <ClCompile Include="..\..\..\Code\Src\View\ScenePanel.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Code\Inc\AssetBrowserThumbnail.h" />
+    <ClInclude Include="..\..\..\Code\Inc\WidgetId.h" />
+    <ClInclude Include="..\..\..\Code\Inc\SceneGraphPanel.h" />
+    <ClInclude Include="..\..\..\Code\Inc\SceneGraphTreeCtrl.h" />
+    <ClInclude Include="..\..\..\Code\Inc\SceneGraphTreeItemData.h" />
+    <ClInclude Include="..\..\..\Code\Inc\ConsolePanel.h" />
+    <ClInclude Include="..\..\..\Code\Inc\Inspector\InspectorPropertyController.h" />
+    <ClInclude Include="..\..\..\Code\Inc\Inspector\InspectorPanel.h" />
+    <ClInclude Include="..\..\..\Code\Inc\Inspector\InspectorPropertyGridPage.h" />
+    <ClInclude Include="..\..\..\Code\Inc\MainMenu.h" />
+    <ClInclude Include="..\..\..\Code\Inc\StdAfx.h" />
+    <ClInclude Include="..\..\..\Code\Inc\Application.h" />
+    <ClInclude Include="..\..\..\Code\Inc\MainFrame.h" />
+    <ClInclude Include="..\..\..\Code\Inc\AssetBrowserCtrl.h" />
+    <ClInclude Include="..\..\..\Code\Inc\TransformPanel.h" />
+    <ClInclude Include="..\..\..\Code\Inc\View\ViewContext.h" />
+    <ClInclude Include="..\..\..\Code\Inc\View\ScenePanel.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2AED8B7A-93F4-43EB-B874-9F289FC32A5F}</ProjectGuid>
+    <RootNamespace>Editor</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SWAY_GF)/SDK;$(WXWIN)/include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SWAY_GF)/Libs;$(WXWIN)/lib/vc_lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SWAY_GF)/SDK;$(WXWIN)/include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SWAY_GF)/Libs;$(WXWIN)/lib/vc_lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>comctl32.lib;uuid.lib;rpcrt4.lib;advapi32.lib;wxbase30ud.lib;wxmsw30ud_core.lib;wxmsw30ud_aui.lib;wxmsw30ud_propgrid.lib;wxmsw30ud_adv.lib;wxpngd.lib;wxjpegd.lib;wxzlibd.lib;GapiOpenGL_Win32_Debug.lib;Core_Win32_Debug.lib;SceneGraph_Win32_Debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>comctl32.lib;uuid.lib;rpcrt4.lib;advapi32.lib;wxbase30u.lib;wxmsw30u_core.lib;wxmsw30u_aui.lib;wxmsw30u_propgrid.lib;wxpng.lib;wxzlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

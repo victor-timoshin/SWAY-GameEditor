@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Inc">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{52770f73-323b-47a4-aabf-b117084a8968}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Shaders">
+      <UniqueIdentifier>{d31f2f90-1825-4df9-b2e0-a9fa3cce3666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inc\EditorObject">
+      <UniqueIdentifier>{8ff704c5-76dc-4695-8572-c1dffb484d41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inc\View">
+      <UniqueIdentifier>{6cda9a7a-af87-480e-a999-d003b8982fed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\View">
+      <UniqueIdentifier>{2253e03f-8c24-46aa-b0da-90db1293793a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Tools">
+      <UniqueIdentifier>{71abbf21-fb90-418f-bf98-1ab1806eb7ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inc\Tools">
+      <UniqueIdentifier>{8f164a7c-3288-46b0-95fa-6884708019f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Inspector">
+      <UniqueIdentifier>{abcb421f-5829-4ead-9a7c-1b23b514f614}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inc\Inspector">
+      <UniqueIdentifier>{ebc18a5a-2e40-4d60-af9a-7fa7815ae569}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inc\Inspector\Pages">
+      <UniqueIdentifier>{85752af0-ca23-4bae-a350-92faaa418a57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Inspector\Pages">
+      <UniqueIdentifier>{8762af8a-4e32-4c92-b4b3-502061300c69}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Assets\Shaders\basic.fs">
+      <Filter>Assets\Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\basic.vs">
+      <Filter>Assets\Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Code\Src\MainFrame.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Src\View\ScenePanel.cpp">
+      <Filter>Src\View</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Src\Application.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Src\ConsolePanel.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Src\View\ViewContext.cpp">
+      <Filter>Src\View</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Src\MainMenu.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Src\Inspector\InspectorPanel.cpp">
+      <Filter>Src\Inspector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Src\Inspector\InspectorPropertyGridPage.cpp">
+      <Filter>Src\Inspector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Src\Inspector\InspectorPropertyController.cpp">
+      <Filter>Src\Inspector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Src\SceneGraphPanel.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Src\SceneGraphTreeCtrl.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Src\SceneGraphTreeItemData.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Src\TransformPanel.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Src\AssetBrowserCtrl.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Code\Src\AssetBrowserThumbnail.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Code\Inc\Application.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Inc\MainFrame.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Inc\View\ScenePanel.h">
+      <Filter>Inc\View</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Inc\StdAfx.h" />
+    <ClInclude Include="..\..\..\Code\Inc\ConsolePanel.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Inc\View\ViewContext.h">
+      <Filter>Inc\View</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Inc\MainMenu.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Inc\Inspector\InspectorPanel.h">
+      <Filter>Inc\Inspector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Inc\Inspector\InspectorPropertyGridPage.h">
+      <Filter>Inc\Inspector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Inc\Inspector\InspectorPropertyController.h">
+      <Filter>Inc\Inspector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Inc\SceneGraphTreeItemData.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Inc\SceneGraphTreeCtrl.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Inc\SceneGraphPanel.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Inc\TransformPanel.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Inc\AssetBrowserCtrl.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Inc\AssetBrowserThumbnail.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Code\Inc\WidgetId.h" />
+  </ItemGroup>
+</Project>

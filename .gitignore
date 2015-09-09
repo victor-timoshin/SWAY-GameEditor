@@ -1,0 +1,11 @@
+Build/Windows/Debug
+Build/Windows/Release
+
+Build/Windows/Editor/Debug
+Build/Windows/Editor/Release
+
+Assets
+
+*.sdf
+*.opensdf
+*.suo
